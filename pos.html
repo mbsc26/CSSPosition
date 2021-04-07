@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .color-1 {color: #2471a3;}
+    .color-2 {color: #2980b9;}
+    .color-3 {color: #5499c7;}
+    .color-4 {color: #c8e6c9;}
+    .color-5 {color: #f8bbd0;}
+    .color-6 {color: #b39ddb;}
+        *{
+            margin:0;padding:0;
+            background-color: #c8e6c9;
+        }
+        .container{
+            margin:50px auto;
+            background-color: #5499C7;
+            width:600px;
+            height: 800px;
+            border-radius: 3px;
+            /*position: relative; //for constriction within parent div */
+            position: relative;
+        }
+        .box{
+            width:150px;
+            background-color: #f8bbd0;
+            height: 150px;
+            border-radius: 3px;
+            position: sticky;
+            /*Note: Fixed is the same as sticky. Both stay on screen while scrolling down. The only difference is that fixed fixes wrt window while sticky fixes wrt the parent div. Note: For sticky, the helping directions still taken wrt the window. e.g. top:10px will be wrt window and not parent container/div. For sticky, the helpers work ONLY when we scroll down.*/
+            top:10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
